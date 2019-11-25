@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import { btnDetails, listTypes } from '../../Config/Constants';
 
 
-import { BtnDetails, Header, SubHeader, NotFound, Search, CardDetailObject } from '../index';
+import { BtnDetails, Header, SubHeader, NotFound, Search, CardDetailObject, Container } from '../index';
 
 import {
   film,
@@ -55,3 +55,12 @@ storiesOf('Card Object Routes')
   .add('Render Card Species', () => <CardDetailObject type={'species'} data={species} history={{}} />)
   .add('Render Card Starships', () => <CardDetailObject type={'starships'} data={starships} history={{}} />)
   .add('Render Card Vehicles', () => <CardDetailObject type={'vehicles'} data={vehicles} history={{}} />)
+
+
+
+storiesOf('Container List')
+  .add('Container Not Children', () => <Container {...actionsContainer} />)
+  .add('Container Not Children and Search', () => <Container onBack={actionsContainer.onBack} />)
+  .add('Container Not Children and Back', () => <Container onSearch={actionsContainer.onSearch} />)
+  .add('Container With Children Not Search', () => <Container onBack={actionsContainer.onBack} > <CardDetailObject type={'films'} data={film} history={{}} /></Container>)
+  .add('Container With Children Not Back', () => <Container onSearch={actionsContainer.onSearch} > <CardDetailObject type={'films'} data={film} history={{}} /></Container>)

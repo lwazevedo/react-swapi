@@ -12,6 +12,7 @@ import Header from './Base/Header';
 import NotFound from './Base/NotFound';
 import Search from './Base/Search';
 import SubHeader from './Base/SubHeader';
+import Container from './Base/Container';
 
 export {
   CardDetailFilm,
@@ -26,4 +27,5 @@ export {
   NotFound,
   Search,
   SubHeader,
+  Container,
 }
