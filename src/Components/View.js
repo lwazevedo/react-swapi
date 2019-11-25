@@ -2,11 +2,11 @@ import React, { useState, useEffect, useContext } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useAlert } from 'react-alert'
 
-import { Container, CardDetailObject, NotFound } from '../index';
-import { messages } from '../../Config/Constants';
+import { Container, CardContainer } from './index';
+import { messages, identifyLabelField } from '../Config/Constants';
 
-import swapi from '../../Config/Api';
-import LoadingContext from '../../Config/LoadingContext';
+import swapi from '../Config/Api';
+import LoadingContext from '../Config/LoadingContext';
 
 const View = (props) => {
   const alert = useAlert();
@@ -35,18 +35,12 @@ const View = (props) => {
 
 
   const onSearch = value => setSearch(`${path}/?search=${value}`);
+  const onMoreInfo = value => props.history.push(value);
 
   return (
     <>
-      {!isLoading && <Container onSearch={onSearch}>
-        {listView.length > 0 && <div className='row mt-4'>
-          {listView.map((item, key) => (
-            <div className='col-sm-4' key={`item-${key}`} >
-              <CardDetailObject type={path === 'people' ? 'characters' : path} data={item} history={props.history} />
-            </div>
-          ))}
-        </div>}
-        {listView.length === 0 && <NotFound />}
+      {!isLoading && listView.length > 0 && <Container onSearch={onSearch}>
+        <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} />
       </Container>}
     </>
   )

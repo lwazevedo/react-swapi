@@ -1,30 +1,16 @@
-import CardDetailFilm from './Shared/CardDetailFilm';
-import CardDetailPeople from './Shared/CardDetailPeople';
-import CardDetailPlanets from './Shared/CardDetailPlanets';
-import CardDetailSpecies from './Shared/CardDetailSpecies';
-import CardDetailStarships from './Shared/CardDetailStarships';
-import CardDetailVehicles from './Shared/CardDetailVehicles';
-
-
-import BtnDetails from './Base/BtnDetails';
-import CardDetailObject from './Base/CardDetailObject';
-import Header from './Base/Header';
-import NotFound from './Base/NotFound';
-import Search from './Base/Search';
-import SubHeader from './Base/SubHeader';
-import Container from './Base/Container';
-import View from './Base/View';
-import ViewDetail from './Base/ViewDetail';
+import BtnDetails from './BtnDetails';
+import Header from './Header';
+import NotFound from './NotFound';
+import Search from './Search';
+import SubHeader from './SubHeader';
+import Container from './Container';
+import View from './View';
+import ViewDetail from './ViewDetail';
+import CardDetail from './CardDetail';
+import CardContainer from './CardContainer';
 
 export {
-  CardDetailFilm,
-  CardDetailPeople,
-  CardDetailPlanets,
-  CardDetailSpecies,
-  CardDetailStarships,
-  CardDetailVehicles,
   BtnDetails,
-  CardDetailObject,
   Header,
   NotFound,
   Search,
@@ -32,4 +18,6 @@ export {
   Container,
   View,
   ViewDetail,
+  CardDetail,
+  CardContainer
 }

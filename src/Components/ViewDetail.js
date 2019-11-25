@@ -3,16 +3,16 @@ import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 
 import { useAlert } from 'react-alert'
-import { messages, btnDetails } from '../../Config/Constants';
+import { messages, btnDetails, identifyType, identifyLabelField } from '../Config/Constants';
 
-import { Container, CardDetailObject, BtnDetails, NotFound } from '../index';
+import { Container, CardContainer } from './index';
 
-import LoadingContext from '../../Config/LoadingContext';
-import swapi from '../../Config/Api';
+import LoadingContext from '../Config/LoadingContext';
+import swapi from '../Config/Api';
 
 const ViewDetail = (props) => {
   const alert = useAlert();
-  const { setIsLoading } = useContext(LoadingContext);
+  const { setIsLoading, isLoading } = useContext(LoadingContext);
   const typeRoute = props.match.url.replace(/[\\/\d+]/g, '');
   const [detail, setDetail] = useState({});
   const [urlAll, setUrlAll] = useState([]);
@@ -63,23 +63,16 @@ const ViewDetail = (props) => {
     const arrayUrls = detail[type].map(url => swapi.get(url));
     if (arrayUrls.length > 0) {
       setUrlAll(arrayUrls);
-      const newType = type === 'people' || type === 'residents' ? 'characters' : type;
-      setTypeAll(newType);
+      setTypeAll(type);
     }
   }
+  const onMoreInfo = value => props.history.push(value);
+
   return (
-    <Container onBack={back}>
-      {detail && <CardDetailObject type={typeRoute === 'people' ? 'characters' : typeRoute} data={detail} />}
-      {detail && <BtnDetails listBtns={btnDetails[typeRoute]} onDetail={getDetails} />}
-      {detailAll.length > 0 && <div className='row mt-4'>
-        {detailAll.length > 0 && detailAll.map((item, key) => (
-          <div className='col-sm-4' key={`item-${key}`} >
-            <CardDetailObject type={typeAll} data={item} history={props.history} />
-          </div>
-        ))}
-      </div>}
-      {detailAll.length === 0 && <NotFound />}
-    </Container>
+    (Object.keys(detail).length > 0 && <Container onBack={back}>
+      <CardContainer typeRender='one' data={detail} fields={identifyLabelField[identifyType[typeRoute]]} listBtns={btnDetails[typeRoute]} onDetail={getDetails} />
+      {!isLoading && detailAll.length > 0 && <CardContainer typeRender='multiple' data={detailAll} fields={identifyLabelField[identifyType[typeAll]]} onMoreInfo={onMoreInfo} />}
+    </Container>)
   );
 };
 

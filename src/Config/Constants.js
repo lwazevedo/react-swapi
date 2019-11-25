@@ -62,14 +62,77 @@ const btnDetails = {
   vehicles: [
     'Films'
   ],
-  species:[
+  species: [
     'Films',
     'People'
   ],
-  planets:[
+  planets: [
     'Films',
     'Residents'
   ]
 };
 
-export { title, subTitle, listTypes, messages, btnDetails };
+const identifyType = {
+  films: 'films',
+  species: 'species',
+  starships: 'starships',
+  vehicles: 'vehicles',
+  people: 'characters',
+  residents: 'characters',
+  characters: 'characters',
+  planets: 'planets',
+};
+
+const identifyLabelField = {
+  films: {
+    'episode_id': 'Episode',
+    'title': 'Title',
+    'director': 'Director',
+    'producer': 'Producer',
+    'opening_crawl': 'Opening Crawl',
+  },
+  people: {
+    name: 'Name',
+    skin_color: 'Skin Color',
+    gender: 'Gender',
+    mass: 'Mass',
+    height: 'Height',
+  },
+  characters: {
+    name: 'Name',
+    skin_color: 'Skin Color',
+    gender: 'Gender',
+    mass: 'Mass',
+    height: 'Height',
+  },
+  planets: {
+    name: 'Name',
+    population: 'Population',
+    orbital_period: 'Orbital Period',
+    climate: 'Climate',
+    terrain: 'Terrain',
+  },
+  species: {
+    name: 'Name',
+    classification: 'Classification',
+    designation: 'Designation',
+    language: 'Language',
+    average_height: 'Average Height',
+  },
+  starships: {
+    name: 'Name',
+    manufacturer: 'Manufacturer',
+    model: 'Model',
+    max_atmosphering_speed: 'Max Atmosphering Speed',
+    cost_in_credits: 'Cost in Credits',
+  },
+  vehicles: {
+    name: 'Name',
+    manufacturer: 'Manufacturer',
+    model: 'Model',
+    max_atmosphering_speed: 'Max Atmosphering Speed',
+    cost_in_credits: 'Cost in Credits',
+  }
+}
+
+export { title, subTitle, listTypes, messages, btnDetails, identifyType, identifyLabelField };
