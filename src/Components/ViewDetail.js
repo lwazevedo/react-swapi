@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useAlert } from 'react-alert'
 import { messages, btnDetails, identifyType, identifyLabelField } from '../Config/Constants';
 
-import { Container, CardContainer } from './index';
+import { Container, CardContainer, NotFound } from './index';
 
 import LoadingContext from '../Config/LoadingContext';
 import swapi from '../Config/Api';
@@ -38,10 +38,9 @@ const ViewDetail = (props) => {
   }, [alert, props.match.url, setIsLoading]);
 
   useEffect(() => {
-
+    setDetailAll([]);
     const FetchData = async () => {
       setIsLoading(true);
-      setDetailAll([]);
       try {
         const res = await axios.all(urlAll);
         const data = res.map(item => item.data);
@@ -54,17 +53,17 @@ const ViewDetail = (props) => {
         alert.error(messages.SEARCH_FAILED);
       }
     };
+    
     if (urlAll.length > 0) FetchData();
+
   }, [urlAll, alert, setIsLoading]);
 
 
   const back = () => props.history.push(`/${typeRoute}`);
   const getDetails = (type) => {
     const arrayUrls = detail[type].map(url => swapi.get(url));
-    if (arrayUrls.length > 0) {
-      setUrlAll(arrayUrls);
-      setTypeAll(type);
-    }
+    setUrlAll(arrayUrls);
+    setTypeAll(type);
   }
   const onMoreInfo = value => props.history.push(value);
 
@@ -72,6 +71,7 @@ const ViewDetail = (props) => {
     (Object.keys(detail).length > 0 && <Container onBack={back}>
       <CardContainer typeRender='one' data={detail} fields={identifyLabelField[identifyType[typeRoute]]} listBtns={btnDetails[typeRoute]} onDetail={getDetails} />
       {!isLoading && detailAll.length > 0 && <CardContainer typeRender='multiple' data={detailAll} fields={identifyLabelField[identifyType[typeAll]]} onMoreInfo={onMoreInfo} />}
+      {urlAll.length === 0 && typeAll && <NotFound />}
     </Container>)
   );
 };
