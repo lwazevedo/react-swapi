@@ -79,7 +79,6 @@ body {
   color: #ffe43b !important;
 }
 
-.btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
   background-color: #ffe43b !important;
@@ -88,8 +87,11 @@ body {
   box-shadow: none !important;
 }
 
-.hover-color-li li > a:focus,
 .hover-color-li li > a:active,
 .hover-color-li li > a.active {
+  color: #ffe43b !important;
+}
+
+.active {
   color: #ffe43b !important;
 }

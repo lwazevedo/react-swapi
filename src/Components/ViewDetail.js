@@ -12,7 +12,7 @@ import swapi from '../Config/Api';
 
 const ViewDetail = (props) => {
   const alert = useAlert();
-  const { setIsLoading, isLoading } = useContext(LoadingContext);
+  const { setIsLoading, isLoading, setViewSubHeader } = useContext(LoadingContext);
   const typeRoute = props.match.url.replace(/[\\/\d+]/g, '');
   const [detail, setDetail] = useState({});
   const [urlAll, setUrlAll] = useState([]);
@@ -60,7 +60,10 @@ const ViewDetail = (props) => {
   }, [urlAll, alert, setIsLoading]);
 
 
-  const back = () => props.history.push(`/${typeRoute}`);
+  const back = () => {
+    setViewSubHeader(true);
+    props.history.push(`/${typeRoute}`)
+  };
   const getDetails = (type) => {
     const arrayUrls = detail[type].map(url => swapi.get(url));
     setUrlAll(arrayUrls);

@@ -11,7 +11,7 @@ import LoadingContext from '../Config/LoadingContext';
 const View = (props) => {
   const alert = useAlert();
   const path = props.location.pathname.replace(/[\\/]/g, '');
-  const { setIsLoading, isLoading } = useContext(LoadingContext);
+  const { setIsLoading, isLoading, setViewSubHeader } = useContext(LoadingContext);
   const [listView, setListView] = useState([]);
   const [search, setSearch] = useState(null);
 
@@ -35,12 +35,15 @@ const View = (props) => {
 
 
   const onSearch = value => setSearch(`${path}/?search=${value}`);
-  const onMoreInfo = value => props.history.push(value);
+  const onMoreInfo = value => {
+    setViewSubHeader(false);
+    props.history.push(value)
+  };
 
   return (
-    (!isLoading && listView.length > 0 && <Container onSearch={onSearch}>
-      <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} />
-    </Container>)
+    <Container onSearch={onSearch}>
+      {!isLoading && listView.length > 0 && <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} />}
+    </Container>
   )
 };
 

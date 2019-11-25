@@ -10,9 +10,8 @@ import { title, subTitle, listTypes } from './Config/Constants';
 import LoadingContext from './Config/LoadingContext';
 import RoutesList from './Config/Routes';
 
-function App(props) {
-  console.log(props);
-  const { isLoading } = useContext(LoadingContext);
+function App() {
+  const { isLoading, viewSubHeader } = useContext(LoadingContext);
   return (
     <div className='container-fluid'>
       <LoadingOverlay
@@ -28,7 +27,7 @@ function App(props) {
       >
         <Header title={title} subTitle={subTitle} />
         <Router>
-          <SubHeader list={listTypes} />
+        {viewSubHeader && <SubHeader list={listTypes} />}
           <RoutesList list={listTypes} />
         </Router>
       </LoadingOverlay>
