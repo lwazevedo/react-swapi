@@ -87,3 +87,9 @@ body {
   border-color: #ffffff !important;
   box-shadow: none !important;
 }
+
+.hover-color-li li > a:focus,
+.hover-color-li li > a:active,
+.hover-color-li li > a.active {
+  color: #ffe43b !important;
+}

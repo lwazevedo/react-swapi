@@ -18,6 +18,7 @@ const ViewDetail = (props) => {
   const [urlAll, setUrlAll] = useState([]);
   const [detailAll, setDetailAll] = useState([]);
   const [typeAll, setTypeAll] = useState(null);
+  // const [activeBtn, setActiveBtn] = useState('');
 
   useEffect(() => {
     setIsLoading(true);
@@ -64,12 +65,13 @@ const ViewDetail = (props) => {
     const arrayUrls = detail[type].map(url => swapi.get(url));
     setUrlAll(arrayUrls);
     setTypeAll(type);
+    
   }
   const onMoreInfo = value => props.history.push(value);
 
   return (
     (Object.keys(detail).length > 0 && <Container onBack={back}>
-      <CardContainer typeRender='one' data={detail} fields={identifyLabelField[identifyType[typeRoute]]} listBtns={btnDetails[typeRoute]} onDetail={getDetails} />
+      <CardContainer typeRender='one' data={detail} fields={identifyLabelField[identifyType[typeRoute]]} listBtns={btnDetails[typeRoute]} onDetail={getDetails} active={identifyType[typeAll]}/>
       {!isLoading && detailAll.length > 0 && <CardContainer typeRender='multiple' data={detailAll} fields={identifyLabelField[identifyType[typeAll]]} onMoreInfo={onMoreInfo} />}
       {urlAll.length === 0 && typeAll && <NotFound />}
     </Container>)

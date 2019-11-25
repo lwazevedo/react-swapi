@@ -8,7 +8,7 @@ const SubHeader = ({ list }) => (
       <ul className="list-inline d-flex justify-content-center text-white hover-color-li">
         {list.map((item, key) => (
           <li key={`item-${key}-${item.id}`} className="list-inline-item ">
-            <Link to={`/${item.id}`} className='text-white'>{item.label}</Link>
+            <Link to={`/${item.id}`} className={`${window.location.pathname === item.id ? 'active' : 'text-white'}`}>{item.label}</Link>
           </li>
         ))}
       </ul>

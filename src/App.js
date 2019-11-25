@@ -10,7 +10,8 @@ import { title, subTitle, listTypes } from './Config/Constants';
 import LoadingContext from './Config/LoadingContext';
 import RoutesList from './Config/Routes';
 
-function App() {
+function App(props) {
+  console.log(props);
   const { isLoading } = useContext(LoadingContext);
   return (
     <div className='container-fluid'>

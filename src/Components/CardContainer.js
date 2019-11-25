@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import { BtnDetails, NotFound, CardDetail } from './index';
 
-const CardContainer = ({ data, typeRender, fields, listBtns, onDetail, onMoreInfo }) => {
+const CardContainer = ({ data, typeRender, fields, listBtns, onDetail, onMoreInfo, active }) => {
 
   if (typeRender === 'one') {
     return (
       (data ? <>
         <CardDetail data={data} fields={fields} />
-        <BtnDetails listBtns={listBtns} onDetail={onDetail} />
+        <BtnDetails listBtns={listBtns} onDetail={onDetail} active={active} />
       </> : <NotFound />)
     );
   }
