@@ -68,6 +68,10 @@ body {
   outline: 0;
 }
 
+.hover-color-swapi:focus {
+  box-shadow: none;
+}
+
 .hover-color-swapi-reverse:hover {
   background-color: black !important;
   color: #ffffff !important;
@@ -75,8 +79,16 @@ body {
   box-shadow: none !important;
 }
 
+.hover-color-swapi-reverse:focus {
+  box-shadow: none;
+}
+
 .hover-color-li li > a:hover {
   color: #ffe43b !important;
+}
+
+.hover-color-li li > a:focus {
+  box-shadow: none;
 }
 
 .btn-primary:active,
