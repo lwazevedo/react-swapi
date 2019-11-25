@@ -13,6 +13,8 @@ import NotFound from './Base/NotFound';
 import Search from './Base/Search';
 import SubHeader from './Base/SubHeader';
 import Container from './Base/Container';
+import View from './Base/View';
+import ViewDetail from './Base/ViewDetail';
 
 export {
   CardDetailFilm,
@@ -28,4 +30,6 @@ export {
   Search,
   SubHeader,
   Container,
+  View,
+  ViewDetail,
 }
