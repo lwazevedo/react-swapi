@@ -14,6 +14,7 @@ const View = (props) => {
   const { setIsLoading, isLoading, setViewSubHeader } = useContext(LoadingContext);
   const [listView, setListView] = useState([]);
   const [search, setSearch] = useState(null);
+  
 
   useEffect(() => {
     const FetchData = async () => {
@@ -34,10 +35,10 @@ const View = (props) => {
   }, [props.location.pathname, search, alert, path, setIsLoading]);
 
 
-  const onSearch = value => setSearch(`${path}/?search=${value}`);
+  const onSearch = value => {setSearch(`${path}/?search=${value}`)};
   const onMoreInfo = value => {
-    setViewSubHeader(false);
     props.history.push(value)
+    setViewSubHeader(false);
   };
 
   return (
