@@ -17,6 +17,12 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+
+### `yarn run storybook`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running storybook](https://www.learnstorybook.com/intro-to-storybook/react/en/get-started/) for more information.
+
 ### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
