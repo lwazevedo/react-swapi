@@ -27,7 +27,7 @@ const Search = ({ placeholder, onSearch }) => {
   );
 };
 
-Search.prototypes = {
+Search.propTypes = {
   placeholder: PropTypes.string,
   onSearch: PropTypes.func.isRequired,
 }

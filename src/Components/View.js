@@ -38,11 +38,9 @@ const View = (props) => {
   const onMoreInfo = value => props.history.push(value);
 
   return (
-    <>
-      {!isLoading && listView.length > 0 && <Container onSearch={onSearch}>
-        <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} />
-      </Container>}
-    </>
+    (!isLoading && listView.length > 0 && <Container onSearch={onSearch}>
+      <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} />
+    </Container>)
   )
 };
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const BtnDetails = ({ listBtns, onDetail }) => (
   <div className='row'>
@@ -9,5 +10,10 @@ const BtnDetails = ({ listBtns, onDetail }) => (
     </div>
   </div >
 );
+
+BtnDetails.propTypes = {
+  listBtns: PropTypes.array.isRequired,
+  onDetail: PropTypes.func.isRequired
+}
 
 export default BtnDetails;

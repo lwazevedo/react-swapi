@@ -16,7 +16,7 @@ const SubHeader = ({ list }) => (
   </div>
 );
 
-SubHeader.prototypes = {
+SubHeader.propTypes = {
   list: PropTypes.arrayOf(
     PropTypes.shape(
       {

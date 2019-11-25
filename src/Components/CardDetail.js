@@ -35,9 +35,10 @@ const CardDetail = ({ data, fields, onMoreInfo }) => {
   )
 };
 
-CardDetail.prototypes = {
+CardDetail.propTypes = {
   data: PropTypes.object.isRequired,
   fields: PropTypes.object.isRequired,
+  onMoreInfo: PropTypes.func,
 }
 
 export default CardDetail;

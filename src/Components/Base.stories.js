@@ -6,7 +6,7 @@ import { action } from '@storybook/addon-actions';
 import { btnDetails, listTypes, identifyLabelField } from '../Config/Constants';
 
 
-import { BtnDetails, Header, SubHeader, NotFound, Search, Container, CardContainer } from './index';
+import { BtnDetails, Header, SubHeader, NotFound, Search, Container, CardContainer, CardDetail } from './index';
 
 
 export const film = {
@@ -90,10 +90,18 @@ storiesOf('Not Found')
   .add('Not Found ', () => <NotFound />)
 
 
-storiesOf('Container List')
+storiesOf('Container')
   .add('Container Not Children', () => <Container {...actionsContainer} />)
   .add('Container Not Children and Search', () => <Container onBack={actionsContainer.onBack} />)
   .add('Container Not Children and Back', () => <Container onSearch={actionsContainer.onSearch} />)
   .add('Container With Children Not Search', () => <Container onBack={actionsContainer.onBack} > <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} /></Container>)
   .add('Container With Children Not Back', () => <Container onSearch={actionsContainer.onSearch} > <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} /></Container>)
   .add('Container With Children One', () => <Container onBack={actionsContainer.onBack} > <CardContainer typeRender='one' data={film} fields={identifyLabelField['films']} listBtns={btnDetails['films']} onDetail={actionsContainer.onDetail} /></Container>)
+
+
+storiesOf('CardContainer')  
+.add('Card Container Multiple', () =>  <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} />)
+.add('Card Container One', () => <CardContainer typeRender='one' data={film} fields={identifyLabelField['films']} listBtns={btnDetails['films']} onDetail={actionsContainer.onDetail} />)
+
+storiesOf('CardDetail')  
+.add('Card Detail', () =>  <CardDetail data={film} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} />)

@@ -10,7 +10,7 @@ const Header = ({ title, subTitle }) => (
   </div>
 );
 
-Header.prototypes = {
+Header.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
 };
