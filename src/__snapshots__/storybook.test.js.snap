@@ -1,0 +1,829 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Buttons of details list  Buttons Film 1`] = `
+<div
+  style={
+    Object {
+      "padding": "5rem",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Characters
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Planets
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Species
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Starships
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Vehicles
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons of details list  Buttons People 1`] = `
+<div
+  style={
+    Object {
+      "padding": "5rem",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Films
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Species
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Starships
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Vehicles
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons of details list  Buttons Planets 1`] = `
+<div
+  style={
+    Object {
+      "padding": "5rem",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Films
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Residents
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons of details list  Buttons Species 1`] = `
+<div
+  style={
+    Object {
+      "padding": "5rem",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Films
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        People
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons of details list  Buttons Startships 1`] = `
+<div
+  style={
+    Object {
+      "padding": "5rem",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Films
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Buttons of details list  Buttons Vehicles 1`] = `
+<div
+  style={
+    Object {
+      "padding": "5rem",
+    }
+  }
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Films
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CardContainer Card Container Multiple 1`] = `
+<div
+  className="row mt-4"
+>
+  <div
+    className="col-sm-12 text-center"
+  >
+    <div
+      className="d-flex justify-content-center"
+    >
+      <ul
+        className="rc-pagination"
+        style={Object {}}
+        unselectable="unselectable"
+      >
+        <li
+          aria-disabled={true}
+          className="rc-pagination-disabled rc-pagination-prev"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={null}
+          title={null}
+        >
+          <a
+            className="rc-pagination-item-link"
+          />
+        </li>
+        <li
+          className="rc-pagination-item rc-pagination-item-1 rc-pagination-item-active"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex="0"
+          title={null}
+        >
+          <a>
+            1
+          </a>
+        </li>
+        <li
+          aria-disabled={true}
+          className="rc-pagination-disabled rc-pagination-next"
+          onClick={[Function]}
+          onKeyPress={[Function]}
+          tabIndex={null}
+          title={null}
+        >
+          <a
+            className="rc-pagination-item-link"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots CardContainer Card Container One 1`] = `
+Array [
+  <div
+    className="card-transparent mt-4"
+  >
+    <div
+      className="card-body"
+    />
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Characters
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Planets
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Species
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Starships
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Vehicles
+      </button>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots CardDetail Card Detail 1`] = `
+<div
+  className="card-transparent mt-4"
+>
+  <div
+    className="card-body"
+  >
+    <button
+      className="btn btn-primary mt-2 hover-color-swapi btn-sm text-white bg-transparent border-color-swapi"
+      onClick={[Function]}
+    >
+      More Information
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Container Container Not Children 1`] = `
+<div
+  className="container mt-4"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="row mt-4 mb-4"
+    >
+      <div
+        className="col-sm-4 offset-sm-4   text-center"
+      >
+        <div
+          className="d-flex justify-content-center"
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-control bg-transparent transparent-input"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+            <div
+              className="input-group-append"
+            >
+              
+              <button
+                className="btn btn-outline-secondary bg-transparent transparent-input"
+                type="submit"
+              >
+                <i
+                  className="fa fa-search text-white"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <button
+    className="btn btn-primary btn-sm bg-transparent hover-color-swapi-reverse  border-white  text-color-swapi ml-3"
+    onClick={[Function]}
+  >
+    Back
+  </button>
+</div>
+`;
+
+exports[`Storyshots Container Container Not Children and Back 1`] = `
+<div
+  className="container mt-4"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="row mt-4 mb-4"
+    >
+      <div
+        className="col-sm-4 offset-sm-4   text-center"
+      >
+        <div
+          className="d-flex justify-content-center"
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-control bg-transparent transparent-input"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+            <div
+              className="input-group-append"
+            >
+              
+              <button
+                className="btn btn-outline-secondary bg-transparent transparent-input"
+                type="submit"
+              >
+                <i
+                  className="fa fa-search text-white"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Container Container Not Children and Search 1`] = `
+<div
+  className="container mt-4"
+>
+  <button
+    className="btn btn-primary btn-sm bg-transparent hover-color-swapi-reverse  border-white  text-color-swapi ml-3"
+    onClick={[Function]}
+  >
+    Back
+  </button>
+</div>
+`;
+
+exports[`Storyshots Container Container With Children Multiple Not Back and pagnation default 1`] = `
+<div
+  className="container mt-4"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="row mt-4 mb-4"
+    >
+      <div
+        className="col-sm-4 offset-sm-4   text-center"
+      >
+        <div
+          className="d-flex justify-content-center"
+        >
+          <div
+            className="input-group"
+          >
+            <input
+              className="form-control bg-transparent transparent-input"
+              onChange={[Function]}
+              placeholder="Search"
+              type="text"
+              value=""
+            />
+            <div
+              className="input-group-append"
+            >
+              
+              <button
+                className="btn btn-outline-secondary bg-transparent transparent-input"
+                type="submit"
+              >
+                <i
+                  className="fa fa-search text-white"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+   
+  <div
+    className="row mt-4"
+  >
+    <div
+      className="col-sm-12 text-center"
+    >
+      <div
+        className="d-flex justify-content-center"
+      >
+        <ul
+          className="rc-pagination"
+          style={Object {}}
+          unselectable="unselectable"
+        >
+          <li
+            aria-disabled={true}
+            className="rc-pagination-disabled rc-pagination-prev"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            tabIndex={null}
+            title={null}
+          >
+            <a
+              className="rc-pagination-item-link"
+            />
+          </li>
+          <li
+            className="rc-pagination-item rc-pagination-item-1 rc-pagination-item-active"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            tabIndex="0"
+            title={null}
+          >
+            <a>
+              1
+            </a>
+          </li>
+          <li
+            aria-disabled={true}
+            className="rc-pagination-disabled rc-pagination-next"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            tabIndex={null}
+            title={null}
+          >
+            <a
+              className="rc-pagination-item-link"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Container Container With Children Multiple Not Search and pagnation default 1`] = `
+<div
+  className="container mt-4"
+>
+  <button
+    className="btn btn-primary btn-sm bg-transparent hover-color-swapi-reverse  border-white  text-color-swapi ml-3"
+    onClick={[Function]}
+  >
+    Back
+  </button>
+   
+  <div
+    className="row mt-4"
+  >
+    <div
+      className="col-sm-12 text-center"
+    >
+      <div
+        className="d-flex justify-content-center"
+      >
+        <ul
+          className="rc-pagination"
+          style={Object {}}
+          unselectable="unselectable"
+        >
+          <li
+            aria-disabled={true}
+            className="rc-pagination-disabled rc-pagination-prev"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            tabIndex={null}
+            title={null}
+          >
+            <a
+              className="rc-pagination-item-link"
+            />
+          </li>
+          <li
+            className="rc-pagination-item rc-pagination-item-1 rc-pagination-item-active"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            tabIndex="0"
+            title={null}
+          >
+            <a>
+              1
+            </a>
+          </li>
+          <li
+            aria-disabled={true}
+            className="rc-pagination-disabled rc-pagination-next"
+            onClick={[Function]}
+            onKeyPress={[Function]}
+            tabIndex={null}
+            title={null}
+          >
+            <a
+              className="rc-pagination-item-link"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Container Container With Children One 1`] = `
+<div
+  className="container mt-4"
+>
+  <button
+    className="btn btn-primary btn-sm bg-transparent hover-color-swapi-reverse  border-white  text-color-swapi ml-3"
+    onClick={[Function]}
+  >
+    Back
+  </button>
+   
+  <div
+    className="card-transparent mt-4"
+  >
+    <div
+      className="card-body"
+    />
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-12"
+    >
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Characters
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Planets
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Species
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Starships
+      </button>
+      <button
+        className="btn btn-primary hover-color-swapi-reverse btn-sm bg-transparent border-white text-color-swapi ml-3"
+        onClick={[Function]}
+      >
+        Vehicles
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header Header App 1`] = `
+<div
+  className="row mt-4 mb-4"
+>
+  <div
+    className="col-sm-12 text-center"
+  >
+    <h1
+      className="text-color-swapi"
+    >
+      SWAPI
+    </h1>
+    <span
+      className="text-color-swapi"
+    >
+      The Star Wars Api
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Not Found Not Found  1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col-sm-12 text-center"
+  >
+    <p
+      className="text-color-swapi"
+    >
+       Not Data Found.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Search Search App 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="row mt-4 mb-4"
+  >
+    <div
+      className="col-sm-4 offset-sm-4   text-center"
+    >
+      <div
+        className="d-flex justify-content-center"
+      >
+        <div
+          className="input-group"
+        >
+          <input
+            className="form-control bg-transparent transparent-input"
+            onChange={[Function]}
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+          <div
+            className="input-group-append"
+          >
+            
+            <button
+              className="btn btn-outline-secondary bg-transparent transparent-input"
+              type="submit"
+            >
+              <i
+                className="fa fa-search text-white"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+`;
+
+exports[`Storyshots Sub Header Sub Header App 1`] = `
+<div
+  className="row mt-4"
+>
+  <div
+    className="col-sm-12"
+  >
+    <ul
+      className="list-inline d-flex justify-content-center text-white hover-color-li"
+    >
+      <li
+        className="list-inline-item"
+      >
+        <a
+          className="text-white"
+          href="/films"
+          onClick={[Function]}
+        >
+          Films
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          className="text-white"
+          href="/people"
+          onClick={[Function]}
+        >
+          Characters
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          className="text-white"
+          href="/starships"
+          onClick={[Function]}
+        >
+          Starships
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          className="text-white"
+          href="/vehicles"
+          onClick={[Function]}
+        >
+          Vehicles
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          className="text-white"
+          href="/species"
+          onClick={[Function]}
+        >
+          Species
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          className="text-white"
+          href="/planets"
+          onClick={[Function]}
+        >
+          Planets
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

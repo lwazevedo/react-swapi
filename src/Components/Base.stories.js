@@ -57,7 +57,7 @@ export const vehicles = {
   cost_in_credits: '150000',
 };
 
-const actions = {
+const actionsBtnls = {
   onDetail: action('onDetail'),
 }
 
@@ -65,16 +65,17 @@ const actionsContainer = {
   onBack: action('onBack'),
   onSearch: action('onSearch'),
   onMoreInfo: action('onMoreInfo'),
+  onDetail: action('onDetail'),
 }
 
 storiesOf('Buttons of details list ', module)
   .addDecorator(story => <div style={{ padding: '5rem' }}>{story()}</div>)
-  .add('Buttons Film', () => <BtnDetails listBtns={btnDetails.films} {...actions} />)
-  .add('Buttons People', () => <BtnDetails listBtns={btnDetails.people} {...actions} />)
-  .add('Buttons Planets', () => <BtnDetails listBtns={btnDetails.planets} {...actions} />)
-  .add('Buttons Species', () => <BtnDetails listBtns={btnDetails.species} {...actions} />)
-  .add('Buttons Startships', () => <BtnDetails listBtns={btnDetails.starships} {...actions} />)
-  .add('Buttons Vehicles', () => <BtnDetails listBtns={btnDetails.vehicles} {...actions} />)
+  .add('Buttons Film', () => <BtnDetails listBtns={btnDetails.films} {...actionsBtnls} active={'films'} />)
+  .add('Buttons People', () => <BtnDetails listBtns={btnDetails.people} {...actionsBtnls} active={'people'} />)
+  .add('Buttons Planets', () => <BtnDetails listBtns={btnDetails.planets} {...actionsBtnls} active={'planets'} />)
+  .add('Buttons Species', () => <BtnDetails listBtns={btnDetails.species} {...actionsBtnls} active={'species'} />)
+  .add('Buttons Startships', () => <BtnDetails listBtns={btnDetails.starships} {...actionsBtnls} active={'startships'} />)
+  .add('Buttons Vehicles', () => <BtnDetails listBtns={btnDetails.vehicles} {...actionsBtnls} active={'vehicles'} />)
 
 
 storiesOf('Header')
@@ -91,17 +92,15 @@ storiesOf('Not Found')
 
 
 storiesOf('Container')
-  .add('Container Not Children', () => <Container {...actionsContainer} />)
-  .add('Container Not Children and Search', () => <Container onBack={actionsContainer.onBack} />)
-  .add('Container Not Children and Back', () => <Container onSearch={actionsContainer.onSearch} />)
-  .add('Container With Children Not Search', () => <Container onBack={actionsContainer.onBack} > <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} /></Container>)
-  .add('Container With Children Not Back', () => <Container onSearch={actionsContainer.onSearch} > <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} /></Container>)
+  .add('Container With Children Multiple Not Search and pagnation default', () => <Container onBack={actionsContainer.onBack} > <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} /></Container>)
+  .add('Container With Children Multiple Not Back and pagnation default', () => <Container onSearch={actionsContainer.onSearch} > <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} /></Container>)
   .add('Container With Children One', () => <Container onBack={actionsContainer.onBack} > <CardContainer typeRender='one' data={film} fields={identifyLabelField['films']} listBtns={btnDetails['films']} onDetail={actionsContainer.onDetail} /></Container>)
 
 
-storiesOf('CardContainer')  
-.add('Card Container Multiple', () =>  <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} />)
-.add('Card Container One', () => <CardContainer typeRender='one' data={film} fields={identifyLabelField['films']} listBtns={btnDetails['films']} onDetail={actionsContainer.onDetail} />)
 
-storiesOf('CardDetail')  
-.add('Card Detail', () =>  <CardDetail data={film} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} />)
+storiesOf('CardContainer')
+  .add('Card Container Multiple', () => <CardContainer typeRender='multiple' data={[film, film]} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} onDetail={actionsContainer.onDetail} />)
+  .add('Card Container One', () => <CardContainer typeRender='one' data={film} fields={identifyLabelField['films']} listBtns={btnDetails['films']} onDetail={actionsContainer.onDetail} />)
+
+storiesOf('CardDetail')
+  .add('Card Detail', () => <CardDetail data={film} fields={identifyLabelField['films']} onMoreInfo={actionsContainer.onMoreInfo} />)

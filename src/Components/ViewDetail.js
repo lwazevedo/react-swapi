@@ -18,7 +18,6 @@ const ViewDetail = (props) => {
   const [urlAll, setUrlAll] = useState([]);
   const [detailAll, setDetailAll] = useState([]);
   const [typeAll, setTypeAll] = useState(null);
-  // const [activeBtn, setActiveBtn] = useState('');
 
   useEffect(() => {
     setIsLoading(true);
@@ -75,7 +74,7 @@ const ViewDetail = (props) => {
   return (
     (Object.keys(detail).length > 0 && <Container onBack={back}>
       <CardContainer typeRender='one' data={detail} fields={identifyLabelField[identifyType[typeRoute]]} listBtns={btnDetails[typeRoute]} onDetail={getDetails} active={identifyType[typeAll]}/>
-      {!isLoading && detailAll.length > 0 && <CardContainer typeRender='multiple' data={detailAll} fields={identifyLabelField[identifyType[typeAll]]} onMoreInfo={onMoreInfo} />}
+      {!isLoading && detailAll.length > 0 && <CardContainer typeRender='multiple' data={detailAll} fields={identifyLabelField[identifyType[typeAll]]} onMoreInfo={onMoreInfo}  pagination={{perPage: 3, pageInitial: 0}} />}
       {urlAll.length === 0 && typeAll && <NotFound />}
     </Container>)
   );

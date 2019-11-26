@@ -43,7 +43,7 @@ const View = (props) => {
 
   return (
     <Container onSearch={onSearch}>
-      {!isLoading && listView.length > 0 && <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} />}
+      {!isLoading && listView.length > 0 && <CardContainer typeRender='multiple' data={listView} fields={identifyLabelField[path]} onMoreInfo={onMoreInfo} pagination={{perPage: 3, pageInitial: 0}} />}
     </Container>
   )
 };
