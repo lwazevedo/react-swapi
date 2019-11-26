@@ -22,6 +22,7 @@
     "start": "PORT=5000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:no-watch": "CI=true react-scripts test --no-watch",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
@@ -29,7 +30,7 @@
   },
   "pre-commit": [
     "commit-msg",
-    "test",
+    "test:no-watch"
   ],
   "eslintConfig": {
     "extends": "react-app"
