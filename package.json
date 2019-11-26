@@ -25,7 +25,7 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "commit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "commit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "pre-commit": [
     "commit-msg",
